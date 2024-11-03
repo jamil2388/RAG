@@ -8,7 +8,7 @@ and observe different parts of the transformer model to apply and output context
 ## Tokenizers
 In this notebook, 3 different tokenizers have been implemented from HuggingFace library - BPE, WordPiece and Unigram. These tokenizers produce different tokens with the same input text. The effects can be studied through this notebook
 
-## Tokenization_Practicals
+## Tokenization_Implications
 Here, we can see the practical implications of different tokenization methods. How different pretrained models tokenize and capture semantics differently. A very simple yet sophisticated case of 
 semantics can be shown with these sets of query and documents. Suppose we have a large set of documents where each document has descriptions of a set of clothes bought for particular prices, like :  
   
