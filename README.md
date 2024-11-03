@@ -28,3 +28,20 @@ techniques to capture as much semantics as possible using the vector embeddings 
 When we store our documents and their embeddings in a vector database like `Qdrant`, and we can use textual queries to fetch semantically similar documents from the db, we have multiple columns to choose from, to compare
 the query semantics with the selected column records. To identify the most appropriate column to compare against, we first have to `evaluate` the `relevance results` on multiple columns against a **ground truth dataset**. This evaluation 
 shows us how choice of a column affects the performance of the same set of queries for our particular interest. In this notebook, we explore such techniques and options of evaluation and relevance rankings against ground truth datasets.
+
+
+# Setup
+
+- Create a virtualenv environment using `python -m virtualenv path/to/your/virtualenv/<virtualenv_name>`
+- Activate the virtualenv
+- Prepare the virtualenv with appropriate libraries : `pip install -r requirements.txt`
+- Download datasets inside `/data/` folder when necessary
+
+## Qdrant (The Vector Database)
+
+- Download docker image of **Qdrant** for local use by running `docker pull qdrant/qdrant`
+- Qdrant quickstart guide : `https://qdrant.tech/documentation/quickstart/`
+- Prepare qdrant container using 
+`docker run -p 6333:6333 -p 6334:6334 \
+    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
+    qdrant/qdrant`
