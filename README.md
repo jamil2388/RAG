@@ -42,6 +42,4 @@ shows us how choice of a column affects the performance of the same set of queri
 - Download docker image of **Qdrant** for local use by running `docker pull qdrant/qdrant`
 - Qdrant quickstart guide : `https://qdrant.tech/documentation/quickstart/`
 - Prepare qdrant container using 
-`docker run -p 6333:6333 -p 6334:6334 \
-    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
-    qdrant/qdrant`
+`docker run -p 6333:6333 -p 6334:6334 -v $(pwd)/qdrant_storage:/qdrant/storage:z qdrant/qdrant`
