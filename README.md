@@ -1,5 +1,6 @@
 # Project Descriptions
-The projects used as notebooks are listed here. The details of the projects are given in the relevant sections.
+The projects used as notebooks are listed here. The details of the projects are given in the relevant sections. The implementations are inspired from
+the course https://learn.deeplearning.ai/courses/retrieval-optimization-from-tokenization-to-vector-quantization/lesson/1/introduction
 
 ## Embedding_Models
 The mechanism and impact of tokenizers in transformers are studied in this project. We use `sentence-transformers` library from https://sbert.net/
